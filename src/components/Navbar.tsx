@@ -57,12 +57,12 @@ export const NavBar = () => {
         <div className="hidden md:flex items-center gap-6">
           <ul className="text-white flex gap-6 text-sm">
             <Link to="/">
-            <li
-              className="relative cursor-pointer before:content-[''] before:absolute before:bottom-0 before:left-0
+              <li
+                className="relative cursor-pointer before:content-[''] before:absolute before:bottom-0 before:left-0
                   before:h-[2px] before:w-0 before:bg-white before:transition-all before:duration-300 hover:before:w-full"
-            >
-              Home
-            </li>
+              >
+                Home
+              </li>
             </Link>
             <li
               className="relative cursor-pointer before:content-[''] before:absolute before:bottom-0 before:left-0
@@ -182,14 +182,17 @@ export const NavBar = () => {
             </div>
 
             <ul className="flex flex-col gap-3 text-sm">
-              {["Home", "About us", "Contact"].map((item) => (
-                <li
-                  key={item}
-                  className="hover:text-[#58A6FF] cursor-pointer transition"
-                >
-                  {item}
+              <Link to="/">
+                <li className="hover:text-[#58A6FF] cursor-pointer transition">
+                  Home
                 </li>
-              ))}
+              </Link>
+              <li className="hover:text-[#58A6FF] cursor-pointer transition">
+                About us
+              </li>
+              <li className="hover:text-[#58A6FF] cursor-pointer transition">
+                Contact
+              </li>
             </ul>
 
             <div className="flex items-center gap-4 mt-auto">
