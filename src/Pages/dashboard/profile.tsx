@@ -47,7 +47,7 @@ const [activeTab, setActiveTab] = useState("Overview");
         <span><strong className="text-white">12</strong> following</span>
         <span><strong className="text-white">25</strong> repositories</span>
       </div>
-
+       <div className="mt-10 overflow-x-auto">
       <div className="border-b border-gray-700 mt-10 flex gap-8">
         {tabs.map((tab) => (
           <button
@@ -62,6 +62,7 @@ const [activeTab, setActiveTab] = useState("Overview");
             {tab}
           </button>
         ))}
+      </div>
       </div>
 
       
