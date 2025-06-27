@@ -143,12 +143,12 @@ export const NavBar = () => {
         {open && (
           <div
             onClick={() => setOpen(false)}
-            className="fixed inset-0 bg-transparent bg-opacity-50 backdrop-blur-sm z-40"
+            className="fixed inset-0 bg-black/50 backdrop-blur-sm z-[9990]"
           ></div>
         )}
 
         <aside
-          className={`fixed top-0 right-0 h-full w-80 bg-[#0D1117] text-white border-l border-gray-800  shadow-lg transform transition-transform duration-300 z-50 ${
+          className={`fixed top-0 right-0 h-full w-80 bg-[#0D1117] text-white border-l border-gray-800 shadow-lg transform transition-transform duration-300 z-[9999] ${
             open ? "translate-x-0" : "translate-x-full"
           }`}
         >
@@ -161,12 +161,11 @@ export const NavBar = () => {
 
           <nav className="flex flex-col gap-1 px-4 py-4 text-sm">
             <h3 className="text-gray-400 text-xs mb-1">Profile</h3>
-            
+
             <button className="flex items-center gap-3 px-2 py-2 rounded lg:hover:bg-gray-800 focus:bg-gray-800">
-              <User className="w-4 h-4 text-gray-400" /> <Link to='/dashboard/profile'>Your Profile </Link>
+              <User className="w-4 h-4 text-gray-400" />{" "}
+              <Link to="/dashboard/profile">Your Profile </Link>
             </button>
-           
-            
 
             <h3 className="text-gray-400 text-xs mt-4 mb-1">Your Work</h3>
             <button className="flex items-center gap-3 px-2 py-2 rounded lg:hover:bg-gray-800 focus:bg-gray-800">
@@ -220,102 +219,101 @@ export const NavBar = () => {
         </div>
       </nav>
       {/*mobile hamburger */}
-      
-        <>
-          <div
+
+      <>
+        <div
+          onClick={() => setIsOpen(false)}
+          className={`fixed inset-0 bg-black backdrop-blur-sm transition-opacity duration-300 ${
+            isOpen
+              ? "opacity-50 pointer-events-auto z-40"
+              : "opacity-0 pointer-events-none"
+          }`}
+        ></div>
+
+        <div
+          className={`fixed top-0 left-0 w-64 h-full bg-[#0D1117] p-5 flex flex-col gap-6 text-white transform transition-transform duration-300 z-50 ${
+            isOpen ? "translate-x-0" : "-translate-x-full"
+          }`}
+        >
+          <button
+            className="self-end text-white text-xl"
             onClick={() => setIsOpen(false)}
-            className={`fixed inset-0 bg-black backdrop-blur-sm transition-opacity duration-300 ${
-              isOpen
-                ? "opacity-50 pointer-events-auto z-40"
-                : "opacity-0 pointer-events-none"
-            }`}
-          ></div>
-
-          <div
-            className={`fixed top-0 left-0 w-64 h-full bg-[#0D1117] p-5 flex flex-col gap-6 text-white transform transition-transform duration-300 z-50 ${
-              isOpen ? "translate-x-0" : "-translate-x-full"
-            }`}
           >
-            <button
-              className="self-end text-white text-xl"
-              onClick={() => setIsOpen(false)}
-            >
-              ×
-            </button>
+            ×
+          </button>
 
-            <p className="text-xl font-semibold">SkillMatch</p>
+          <p className="text-xl font-semibold">SkillMatch</p>
 
-            <div className="relative w-full">
-              <input
-                type="search"
-                placeholder="Search..."
-                className="w-full pl-3 pr-10 py-2 text-sm text-white bg-gray-800 border border-gray-600 rounded-md placeholder-gray-400 focus:outline-none focus:border-[#58A6FF]"
-              />
-              <div className="absolute right-3 top-2.5 text-gray-400">
-                <svg
-                  className="w-4 h-4"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M21 21l-4-4m0 0a7 7 0 10-10 0 7 7 0 0010 0z"
-                  />
-                </svg>
-              </div>
-            </div>
-
-            <ul className="flex flex-col gap-3 text-sm">
-              <Link to="/">
-                <li className="focus:text-[#58A6FF] cursor-pointer transition">
-                  Home
-                </li>
-              </Link>
-              <li className="focus:text-[#58A6FF] cursor-pointer transition">
-                About us
-              </li>
-              <li className="focus:text-[#58A6FF] cursor-pointer transition">
-                Contact
-              </li>
-            </ul>
-
-            <div className="flex items-center gap-4 mt-auto">
+          <div className="relative w-full">
+            <input
+              type="search"
+              placeholder="Search..."
+              className="w-full pl-3 pr-10 py-2 text-sm text-white bg-gray-800 border border-gray-600 rounded-md placeholder-gray-400 focus:outline-none focus:border-[#58A6FF]"
+            />
+            <div className="absolute right-3 top-2.5 text-gray-400">
               <svg
-                xmlns="http://www.w3.org/2000/svg"
+                className="w-4 h-4"
                 fill="none"
-                viewBox="0 0 24 24"
                 stroke="currentColor"
                 strokeWidth="2"
-                className="w-6 h-6 text-white cursor-pointer focus:text-[#58A6FF] transition"
+                viewBox="0 0 24 24"
               >
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0a3 3 0 11-6 0h6z"
+                  d="M21 21l-4-4m0 0a7 7 0 10-10 0 7 7 0 0010 0z"
                 />
               </svg>
-
-              <button
-                onClick={() => {
-                  setOpen(true);
-                  setIsOpen(false);
-                }}
-                className="flex items-center gap-2 px-2 py-2 rounded hover:bg-gray-800"
-              >
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/149/149071.png"
-                  className="rounded-full w-6 h-6"
-                  alt="Profile"
-                />
-                <span className="text-sm">Your Account</span>
-              </button>
             </div>
           </div>
-        </>
-      
+
+          <ul className="flex flex-col gap-3 text-sm">
+            <Link to="/">
+              <li className="focus:text-[#58A6FF] cursor-pointer transition">
+                Home
+              </li>
+            </Link>
+            <li className="focus:text-[#58A6FF] cursor-pointer transition">
+              About us
+            </li>
+            <li className="focus:text-[#58A6FF] cursor-pointer transition">
+              Contact
+            </li>
+          </ul>
+
+          <div className="flex items-center gap-4 mt-auto">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth="2"
+              className="w-6 h-6 text-white cursor-pointer focus:text-[#58A6FF] transition"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0a3 3 0 11-6 0h6z"
+              />
+            </svg>
+
+            <button
+              onClick={() => {
+                setOpen(true);
+                setIsOpen(false);
+              }}
+              className="flex items-center gap-2 px-2 py-2 rounded hover:bg-gray-800"
+            >
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/149/149071.png"
+                className="rounded-full w-6 h-6"
+                alt="Profile"
+              />
+              <span className="text-sm">Your Account</span>
+            </button>
+          </div>
+        </div>
+      </>
     </>
   );
 };
