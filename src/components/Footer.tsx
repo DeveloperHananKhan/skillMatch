@@ -6,6 +6,7 @@ export const Footer = () => {
         <div className="w-full max-w-6xl h-px bg-gray-800 mx-auto my-16"></div>
         <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           <div>
+            <Link  to='/'>
             <svg
               width="160"
               height="40"
@@ -48,6 +49,7 @@ export const Footer = () => {
                 />
               </g>
             </svg>
+            </Link>
 
             <p className="text-gray-400 mt-2 text-sm">
               Your gateway to connect with tech opportunities.
@@ -58,10 +60,10 @@ export const Footer = () => {
             <h3 className="text-lg font-semibold mb-2">Navigation</h3>
             <ul className="space-y-1 text-gray-400 text-sm">
               <Link to='/'>
-              <li className="active:text-[#58A6FF] cursor-pointer">Home</li>
+              <li className="focus:text-[#58A6FF] cursor-pointer lg:hover:text-[#58A6FF] ">Home</li>
               </Link>
-              <li className="active:text-[#58A6FF] cursor-pointer">About Us</li>
-              <li className="active:text-[#58A6FF] cursor-pointer">Contact</li>
+              <li className="focus:text-[#58A6FF] cursor-pointer lg:hover:text-[#58A6FF]">About Us</li>
+              <li className="focus:text-[#58A6FF] cursor-pointer lg:hover:text-[#58A6FF]">Contact</li>
             </ul>
           </div>
 
@@ -125,7 +127,7 @@ export const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-2">Social</h3>
             <ul className="space-y-3 text-sm">
-              <li className="flex items-center gap-3 text-gray-400 active:text-[#58A6FF] cursor-pointer transition">
+              <li className="flex items-center gap-3 text-gray-400 focus:text-[#58A6FF] cursor-pointer transition">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -137,7 +139,7 @@ export const Footer = () => {
                 GitHub
               </li>
 
-              <li className="flex items-center gap-3 text-gray-400 active:text-[#58A6FF] cursor-pointer transition">
+              <li className="flex items-center gap-3 text-gray-400 focus:text-[#58A6FF] cursor-pointer transition">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -149,7 +151,7 @@ export const Footer = () => {
                 Twitter
               </li>
 
-              <li className="flex items-center gap-3 text-gray-400 active:text-[#58A6FF] cursor-pointer transition">
+              <li className="flex items-center gap-3 text-gray-400 focus:text-[#58A6FF] cursor-pointer transition">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"

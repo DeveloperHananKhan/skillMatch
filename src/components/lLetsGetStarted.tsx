@@ -15,14 +15,14 @@ export const LetsGetStarted = () => {
         </div>
 
         <div  className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-6xl mx-auto text-center">
-          <div className="bg-[#161B22] p-6 rounded-lg border border-gray-700 active:border-[#58A6FF] active:scale-[1.03] transform transition duration-300 cursor-pointer">
+          <div className="bg-[#161B22] p-6 rounded-lg border border-gray-700 focus:border-[#58A6FF] focus:scale-[1.03] transform transition duration-300 cursor-pointer  lg:hover:border-[#58A6FF] hover:scale-[1.03] transform transition duration-300 cursor-pointer">
             <h3 className="text-xl font-semibold mb-2">1. Sign Up</h3>
             <p className="text-gray-400 text-sm">
               Create your free account in seconds.
             </p>
           </div>
 
-          <div className="bg-[#161B22] p-6 rounded-lg border border-gray-700 active:border-[#58A6FF] active:scale-[1.03] transform transition duration-300 cursor-pointer">
+          <div className="bg-[#161B22] p-6 rounded-lg border border-gray-700 focus:border-[#58A6FF] focus:scale-[1.03] transform transition duration-300 cursor-pointer  lg:hover:border-[#58A6FF] hover:scale-[1.03] transform transition duration-300 cursor-pointer">
             <h3 className="text-xl font-semibold mb-2">
               2. Build Your Profile
             </h3>
@@ -31,7 +31,7 @@ export const LetsGetStarted = () => {
             </p>
           </div>
 
-          <div className="bg-[#161B22] p-6 rounded-lg border border-gray-700 active:border-[#58A6FF] active:scale-[1.03] transform transition duration-300 cursor-pointer">
+          <div className="bg-[#161B22] p-6 rounded-lg border border-gray-700 focus:border-[#58A6FF] focus:scale-[1.03] transform transition duration-300 cursor-pointer  lg:hover:border-[#58A6FF] hover:scale-[1.03] transform transition duration-300 cursor-pointer">
             <h3 className="text-xl font-semibold mb-2">3. Explore Work</h3>
             <p className="text-gray-400 text-sm">
               Start applying to jobs and joining teams.
@@ -41,7 +41,7 @@ export const LetsGetStarted = () => {
 
         <div className="mt-12 text-center">
             <Link to='register'>
-          <button  className="bg-[#58A6FF] active:bg-[#1f6feb] text-white font-semibold py-3 px-8 rounded transition">
+          <button  className="bg-[#58A6FF] focus:bg-[#1f6feb] text-white font-semibold py-3 px-8 rounded transition lg:hover:bg-[#1f6feb] text-white ">
             
             Join Now
           </button>

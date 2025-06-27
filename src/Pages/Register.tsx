@@ -6,7 +6,7 @@ export const Register = () => {
     <>
       <NavBar />
       <section className="min-h-screen flex flex-col items-center justify-center bg-black px-4 py-12 border-t-[1px] border-gray-800 border-solid ">
-        <svg
+        <Link to='.'><svg
           width="160"
           height="40"
           viewBox="0 0 220 50"
@@ -48,8 +48,9 @@ export const Register = () => {
             />
           </g>
         </svg>
+        </Link>
 
-        <div  className="w-full max-w-md bg-[#161B22] border border-gray-700 rounded-md shadow-lg p-8 active:border-[#58A6FF] ">
+        <div className="w-full max-w-md bg-[#161B22] border border-gray-700 rounded-md shadow-lg p-8 focus:border-[#58A6FF] ">
           <h1 className="text-2xl font-bold text-white mb-6">
             Create an account
           </h1>
@@ -86,7 +87,7 @@ export const Register = () => {
 
             <button
               type="button"
-              className="w-full bg-[#58A6FF] active:bg-[#1f6feb] text-white font-medium py-2 rounded mt-2 cursor-pointer"
+              className="w-full bg-[#58A6FF] focus:bg-[#1f6feb] text-white font-medium py-2 rounded mt-2 cursor-pointer   lg:hover:bg-[#1f6feb] text-white"
             >
               Sign up
             </button>
@@ -94,23 +95,21 @@ export const Register = () => {
 
           <p className="text-sm text-gray-400 mt-6 text-center">
             Already have an account?{" "}
-            <Link to='/login'>
-            <span  className="text-[#58A6FF] active:underline">
-              Sign in
-            </span>
+            <Link to="/login">
+              <span className="text-[#58A6FF] focus:underline lg:hover:underline">Sign in</span>
             </Link>
           </p>
         </div>
 
         <p className="text-xs text-gray-500 text-center mt-6 max-w-sm">
           By clicking “Sign up”, you agree to our{" "}
-          <a href="#" className="underline active:text-gray-300">
+          <span  className="underline focus:text-gray-300 lg:hover:text-gray-300">
             terms
-          </a>{" "}
+          </span>{" "}
           and{" "}
-          <a href="#" className="underline active:text-gray-300">
+          <span className="underline focus:text-gray-300 lg:hover:text-gray-300">
             privacy policy
-          </a>
+          </span>
           .
         </p>
       </section>

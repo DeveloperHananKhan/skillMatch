@@ -12,7 +12,7 @@ export const HowItWorks = () => {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-          <div className="bg-[#161B22] p-6 rounded-lg border border-gray-700 active:border-[#58A6FF] active:scale-[1.03] transform transition duration-300 cursor-pointer">
+          <div className="bg-[#161B22] p-6 rounded-lg border border-gray-700 focus:border-[#58A6FF] focus:scale-[1.03] transform transition duration-300 cursor-pointer lg:hover:border-[#58A6FF] hover:scale-[1.03] transform transition duration-300 cursor-pointer">
             <div className="mb-4 text-[#58A6FF]">
               <svg
                 className="w-10 h-10 mx-auto"
@@ -36,7 +36,7 @@ export const HowItWorks = () => {
             </p>
           </div>
 
-          <div className="bg-[#161B22] p-6 rounded-lg border border-gray-700 active:border-[#58A6FF] active:scale-[1.03] transform transition duration-300 cursor-pointer">
+          <div className="bg-[#161B22] p-6 rounded-lg border border-gray-700 focus:border-[#58A6FF] focus:scale-[1.03] transform transition duration-300 cursor-pointer  lg:hover:border-[#58A6FF] hover:scale-[1.03] transform transition duration-300 cursor-pointer">
             <div className="mb-4 text-[#58A6FF]">
               <svg
                 className="w-10 h-10 mx-auto"
@@ -60,7 +60,7 @@ export const HowItWorks = () => {
             </p>
           </div>
 
-          <div className="bg-[#161B22] p-6 rounded-lg border border-gray-700 active:border-[#58A6FF] active:scale-[1.03] transform transition duration-300 cursor-pointer">
+          <div className="bg-[#161B22] p-6 rounded-lg border border-gray-700 focus:border-[#58A6FF] focus:scale-[1.03] transform transition duration-300 cursor-pointer  lg:hover:border-[#58A6FF] hover:scale-[1.03] transform transition duration-300 cursor-pointer">
             <div className="mb-4 text-[#58A6FF]">
               <svg
                 className="w-10 h-10 mx-auto"
@@ -84,7 +84,7 @@ export const HowItWorks = () => {
             </p>
           </div>
 
-          <div className="bg-[#161B22] p-6 rounded-lg border border-gray-700 active:border-[#58A6FF] active:scale-[1.03] transform transition duration-300 cursor-pointer">
+          <div className="bg-[#161B22] p-6 rounded-lg border border-gray-700 focus:border-[#58A6FF] focus:scale-[1.03] transform transition duration-300 cursor-pointer  lg:hover:border-[#58A6FF] hover:scale-[1.03] transform transition duration-300 cursor-pointer">
             <div className="mb-4 text-[#58A6FF]">
               <svg
                 className="w-10 h-10 mx-auto"

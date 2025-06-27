@@ -23,7 +23,7 @@ export const HeroSecrion = () => {
                     .getElementById("lets-get-satrted")
                     ?.scrollIntoView({ behavior: "smooth" })
                 }
-                className="bg-[#58A6FF] active:bg-[#1f6feb] text-white font-semibold py-2 px-6 rounded transition"
+                className="bg-[#58A6FF] focus:bg-[#1f6feb] text-white font-semibold py-2 px-6 rounded transition lg:hover:bg-[#1f6feb] "
               >
                 Get Started
               </button>
@@ -33,7 +33,7 @@ export const HeroSecrion = () => {
                     .getElementById("how-it-works")
                     ?.scrollIntoView({ behavior: "smooth" })
                 }
-                className="border border-[#58A6FF] text-[#58A6FF] active:bg-[#1f6feb] active:text-white font-semibold py-2 px-6 rounded transition"
+                className="border border-[#58A6FF] text-[#58A6FF] focus:bg-[#1f6feb] focus:text-white font-semibold py-2 px-6 rounded transition lg:hover:bg-[#1f6feb] text-white"
               >
                 How It Works
               </button>
