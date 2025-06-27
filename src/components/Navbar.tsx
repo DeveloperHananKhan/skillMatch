@@ -59,20 +59,20 @@ export const NavBar = () => {
             <Link to="/">
               <li
                 className="relative cursor-pointer before:content-[''] before:absolute before:bottom-0 before:left-0
-                  before:h-[2px] before:w-0 before:bg-white before:transition-all before:duration-300 hover:before:w-full"
+                  before:h-[2px] before:w-0 before:bg-white before:transition-all before:duration-300 active:before:w-full"
               >
                 Home
               </li>
             </Link>
             <li
               className="relative cursor-pointer before:content-[''] before:absolute before:bottom-0 before:left-0
-                  before:h-[2px] before:w-0 before:bg-white before:transition-all before:duration-300 hover:before:w-full"
+                  before:h-[2px] before:w-0 before:bg-white before:transition-all before:duration-300 active:before:w-full"
             >
               About us
             </li>
             <li
               className="relative cursor-pointer before:content-[''] before:absolute before:bottom-0 before:left-0
-                  before:h-[2px] before:w-0 before:bg-white before:transition-all before:duration-300 hover:before:w-full"
+                  before:h-[2px] before:w-0 before:bg-white before:transition-all before:duration-300 active:before:w-full"
             >
               Contact
             </li>
@@ -107,7 +107,7 @@ export const NavBar = () => {
             viewBox="0 0 24 24"
             stroke="currentColor"
             strokeWidth="2"
-            className="w-6 h-6 text-white cursor-pointer hover:text-[#58A6FF] transition"
+            className="w-6 h-6 text-white cursor-pointer active:text-[#58A6FF] transition"
           >
             <path
               strokeLinecap="round"
@@ -130,7 +130,7 @@ export const NavBar = () => {
             viewBox="0 0 24 24"
             stroke="currentColor"
             strokeWidth="2"
-            className="w-7 h-7 text-white cursor-pointer hover:text-[#58A6FF] transition"
+            className="w-7 h-7 text-white cursor-pointer active:text-[#58A6FF] transition"
           >
             <path
               strokeLinecap="round"
@@ -183,14 +183,14 @@ export const NavBar = () => {
 
             <ul className="flex flex-col gap-3 text-sm">
               <Link to="/">
-                <li className="hover:text-[#58A6FF] cursor-pointer transition">
+                <li className="active:text-[#58A6FF] cursor-pointer transition">
                   Home
                 </li>
               </Link>
-              <li className="hover:text-[#58A6FF] cursor-pointer transition">
+              <li className="active:text-[#58A6FF] cursor-pointer transition">
                 About us
               </li>
-              <li className="hover:text-[#58A6FF] cursor-pointer transition">
+              <li className="active:text-[#58A6FF] cursor-pointer transition">
                 Contact
               </li>
             </ul>
@@ -202,7 +202,7 @@ export const NavBar = () => {
                 viewBox="0 0 24 24"
                 stroke="currentColor"
                 strokeWidth="2"
-                className="w-6 h-6 text-white cursor-pointer hover:text-[#58A6FF] transition"
+                className="w-6 h-6 text-white cursor-pointer active:text-[#58A6FF] transition"
               >
                 <path
                   strokeLinecap="round"

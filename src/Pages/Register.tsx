@@ -49,7 +49,7 @@ export const Register = () => {
           </g>
         </svg>
 
-        <div  className="w-full max-w-md bg-[#161B22] border border-gray-700 rounded-md shadow-lg p-8 hover:border-[#58A6FF] ">
+        <div  className="w-full max-w-md bg-[#161B22] border border-gray-700 rounded-md shadow-lg p-8 active:border-[#58A6FF] ">
           <h1 className="text-2xl font-bold text-white mb-6">
             Create an account
           </h1>
@@ -86,7 +86,7 @@ export const Register = () => {
 
             <button
               type="button"
-              className="w-full bg-[#58A6FF] hover:bg-[#1f6feb] text-white font-medium py-2 rounded mt-2 cursor-pointer"
+              className="w-full bg-[#58A6FF] active:bg-[#1f6feb] text-white font-medium py-2 rounded mt-2 cursor-pointer"
             >
               Sign up
             </button>
@@ -95,7 +95,7 @@ export const Register = () => {
           <p className="text-sm text-gray-400 mt-6 text-center">
             Already have an account?{" "}
             <Link to='/login'>
-            <span  className="text-[#58A6FF] hover:underline">
+            <span  className="text-[#58A6FF] active:underline">
               Sign in
             </span>
             </Link>
@@ -104,11 +104,11 @@ export const Register = () => {
 
         <p className="text-xs text-gray-500 text-center mt-6 max-w-sm">
           By clicking “Sign up”, you agree to our{" "}
-          <a href="#" className="underline hover:text-gray-300">
+          <a href="#" className="underline active:text-gray-300">
             terms
           </a>{" "}
           and{" "}
-          <a href="#" className="underline hover:text-gray-300">
+          <a href="#" className="underline active:text-gray-300">
             privacy policy
           </a>
           .

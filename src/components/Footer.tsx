@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export const Footer = () => {
   return (
     <>
@@ -56,9 +57,11 @@ export const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-2">Navigation</h3>
             <ul className="space-y-1 text-gray-400 text-sm">
-              <li className="hover:text-[#58A6FF] cursor-pointer">Home</li>
-              <li className="hover:text-[#58A6FF] cursor-pointer">About Us</li>
-              <li className="hover:text-[#58A6FF] cursor-pointer">Contact</li>
+              <Link to='/'>
+              <li className="active:text-[#58A6FF] cursor-pointer">Home</li>
+              </Link>
+              <li className="active:text-[#58A6FF] cursor-pointer">About Us</li>
+              <li className="active:text-[#58A6FF] cursor-pointer">Contact</li>
             </ul>
           </div>
 
@@ -122,7 +125,7 @@ export const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-2">Social</h3>
             <ul className="space-y-3 text-sm">
-              <li className="flex items-center gap-3 text-gray-400 hover:text-[#58A6FF] cursor-pointer transition">
+              <li className="flex items-center gap-3 text-gray-400 active:text-[#58A6FF] cursor-pointer transition">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -134,7 +137,7 @@ export const Footer = () => {
                 GitHub
               </li>
 
-              <li className="flex items-center gap-3 text-gray-400 hover:text-[#58A6FF] cursor-pointer transition">
+              <li className="flex items-center gap-3 text-gray-400 active:text-[#58A6FF] cursor-pointer transition">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -146,7 +149,7 @@ export const Footer = () => {
                 Twitter
               </li>
 
-              <li className="flex items-center gap-3 text-gray-400 hover:text-[#58A6FF] cursor-pointer transition">
+              <li className="flex items-center gap-3 text-gray-400 active:text-[#58A6FF] cursor-pointer transition">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
