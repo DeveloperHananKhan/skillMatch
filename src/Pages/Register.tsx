@@ -49,7 +49,7 @@ export const Register = () => {
           </g>
         </svg>
 
-        <div id="register" className="w-full max-w-md bg-[#161B22] border border-gray-700 rounded-md shadow-lg p-8 hover:border-[#58A6FF] ">
+        <div  className="w-full max-w-md bg-[#161B22] border border-gray-700 rounded-md shadow-lg p-8 hover:border-[#58A6FF] ">
           <h1 className="text-2xl font-bold text-white mb-6">
             Create an account
           </h1>
