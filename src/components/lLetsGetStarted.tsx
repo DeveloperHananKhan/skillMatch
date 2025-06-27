@@ -41,7 +41,12 @@ export const LetsGetStarted = () => {
 
         <div className="mt-12 text-center">
             <Link to='register'>
-          <button className="bg-[#58A6FF] hover:bg-[#1f6feb] text-white font-semibold py-3 px-8 rounded transition">
+          <button  onClick={() =>
+                  document
+                    .getElementById("register")
+                    ?.scrollIntoView({ behavior: "smooth" })
+                } className="bg-[#58A6FF] hover:bg-[#1f6feb] text-white font-semibold py-3 px-8 rounded transition">
+            
             Join Now
           </button>
           </Link>
